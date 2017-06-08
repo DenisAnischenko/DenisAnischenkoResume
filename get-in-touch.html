@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="src/main.css" type="text/css">
     </head>
     <body>
-<header class="header">
+        <header class="header header-get-in-touch">
             <a class="header__a" href="index.html">
                 <div class="header-logo">
                 <span class="header-logo__text">DENIS ANISCHENKO RESUME</span>
@@ -20,25 +20,45 @@
             <ul class="hamburger__navigation">
                 <a href="index.html"><li class="hamburger__navigation_item">Home</li></a>
                 <a href="working-experience.html"><li class="hamburger__navigation_item">Experience</li></a>
-                <a href=#><li class="hamburger__navigation_item">Page_3</li></a>
-                <a href=#><li class="hamburger__navigation_item">Page_4</li></a>
+                <a href="projects.html"><li class="hamburger__navigation_item">Projects</li></a>
+                <a href="hobbies.html"><li class="hamburger__navigation_item">Hobbies</li></a>
             </ul>
         </div>
         </header>
-        <section class="get-in-touch"> 
-            <h1 class="get-in-touch_heading">GET IN TOUCH</h1>
-            <span class="get-in-touch_text">Feel free to contact with any questions, ideas and potential partnerships. <br>
-            Everything you need to design perfect experience.
-            </span>
-        </section>
-        <section class = "input-form">
-            <input class = "input-form__input">Name</input>
-            <input class = "input-form__input">Mail</input>
-            <input class = "input-form__input">Message</input>
-        </section>
-        <footer class="footer">
-            <span class="footer__text">Created with Love by Denis Anis&copy;henko</span>
-            <div class="footer__logos">
+        <div class="getInTouchContent">
+            <section class="get-in-touch"> 
+                <h1 class="get-in-touch_heading">GET IN TOUCH</h1>
+                <span class="get-in-touch_text">Feel free to contact me with any questions, ideas and potential partnerships.<br>
+                Enter your details and I will get back to you shortly.
+                </span>
+            </section>
+            <section class = "messageForm">
+                <div class="messageForm__nameAndMailContainer">
+                    <div class="messageForm__nameAndMailContainer_column">
+                        <label class="messageForm__nameMailContainer_label" for="nameInput">
+                            <span class = "messageForm__nameMailContainer_nameText">Name&nbsp;<span class="messageForm__nameMailContainer_Asterix">*</span></span>
+                            <input class = "messageForm__nameMailContainer_nameInput" id="nameInput"></input>
+                        </label>
+                    </div>
+                    <div class="messageForm__nameAndMailContainer_column">
+                        <label class="messageForm__nameMailContainer_label" for="mailInput">
+                            <span class = "messageForm__nameMailContainer_nameText">Mail&nbsp;<span class="messageForm__nameMailContainer_Asterix">*</span></span>
+                            <input class = "messageForm__nameMailContainer_mailInput" id="mailInput"></input>
+                        </label>
+                    </div>
+                </div>
+                <div class="messageForm__textAreaComtainer">
+                    <label class="messageForm__nameMailContainer_label" for="messageInput">
+                        <span class = "messageForm__nameMailContainer_nameText">Message&nbsp;<span class = "messageForm__nameMailContainer_Asterix">*</span></span>
+                        <textarea class = "messageForm__textAreaComtainer_textareaInput" id="messageInput"></textarea>
+                    </label>
+                </div>
+                <button id="sendMessageButton">SEND MESSAGE</button>
+            </section>
+        </div>
+        <footer class="footer footer-get-in-touch">
+            <span class="footer__text footer__text-GetInTouch">Created with Love by Denis Anis&copy;henko</span>
+            <div class="footer__logos footer__logos-GetInTouch footer__logos-Hobbies">
                 <a class="footer__logos_a" href="https://www.linkedin.com/in/denis-anischenko-813540137/" name="LinkedIn" target="_blank">
                     <img class="footer__logos_img" src="src/img/logos/linkedin_logo.png">
                 </a>

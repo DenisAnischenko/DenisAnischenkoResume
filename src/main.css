@@ -1,3 +1,7 @@
+/*TO DO
+    https://mssg.me/ru?ref=telegram_mediadepression
+*/
+
                     /*GENERAL CSS*/
                     
 @font-face {
@@ -33,6 +37,9 @@ a {
     box-sizing: border-box;
 }
 
+.header-get-in-touch {
+    background-color: #171f23;
+}
 
 .header-logo__text {
     font-size: 40px;
@@ -146,6 +153,10 @@ a {
     background-color: #f8f6f6;
     padding: 0 6%;
     font-size: 20px;
+}
+
+.footer-get-in-touch {
+    background-color: #171f23;
 }
 
 .footer__logos_img {
@@ -288,12 +299,21 @@ a {
 
                     /*GET IN TOUCH*/
                     
+.getInTouchContent {
+    flex: 1 0 auto;
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}                    
 .get-in-touch {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-top: 220px;
     padding-bottom: 100px;
     background-color: #ffffff;
 }
@@ -301,6 +321,7 @@ a {
 .get-in-touch_heading {
     font-size: 48pt;
     color: #3d3d3d;
+    padding-top: 60px;
 }
 
 .get-in-touch_heading {
@@ -314,7 +335,83 @@ a {
     text-align: center;
 }
 
-                    /*WORKING EXPERIENCE*/
+.messageForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.messageForm__nameAndMailContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.messageForm__nameMailContainer_nameInput,
+.messageForm__nameMailContainer_mailInput {
+    border: none;
+    border-bottom: 1px solid #cacaca;
+    width: 100%;
+    
+}
+
+.messageForm__textAreaComtainer {
+    width: 100%;
+}
+
+.messageForm__textAreaComtainer_textareaInput {
+    border: none;
+    border-bottom: 1px solid #cacaca;
+    width: 100%;
+}
+
+.messageForm__nameAndMailContainer_column {
+    width: 48%;
+    display: flex;
+}
+
+.messageForm__nameMailContainer_label {
+    width: 100%
+}
+.messageForm__nameMailContainer_nameText {
+    font-size: 15pt;
+}
+
+.messageForm__nameMailContainer_Asterix,
+.messageForm__nameMailContainer_Asterix {
+    color: #f6744b;
+}
+
+.messageForm__textAreaComtainer {
+    padding-top:60px;
+}
+
+#sendMessageButton {
+   width: 205px;
+   height: 55px;
+   background-color: #f6744b;
+   color: #ffffff;
+   font-size: 14pt;
+   margin: 60px 0;
+   border: none;
+}
+
+#sendMessageButton:hover {
+    cursor: pointer;
+}
+
+.footer__logos-GetInTouch {
+    filter: invert();
+}
+
+.footer__text-GetInTouch {
+    color: #dfdfe0;
+}
+
+
+                    /*HOBBIES*/
                     
 .hobbies-block {
     display: flex;
@@ -345,4 +442,12 @@ a {
     width: 50%;
     height: 500px;
     background-color: #d6d5d5
+}
+
+.footer__logos-hobbies {
+    filter: invert();
+}
+
+.footer-hobbies {
+    color: #dfdfe0;
 }
