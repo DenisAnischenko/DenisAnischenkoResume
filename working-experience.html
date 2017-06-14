@@ -1,49 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Relative Working Experience</title>
-        <meta charsert="UTF-8"></meta>
-        <link rel="stylesheet" href="src/normalize.css" type="text/css">
-        <link rel="stylesheet" href="src/main.css" type="text/css">
-    </head>
-    <body>
-        <header class="header">
-            <a class="header__a" href="index.html">
-                <div class="header-logo">
+
+<head>
+    <title>Relative Working Experience</title>
+    <meta charsert="UTF-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/normalize.css" type="text/css">
+    <link rel="stylesheet" href="src/main.css" type="text/css">
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__a" href="index.html">
+            <div class="header-logo">
                 <span class="header-logo__text">DENIS ANISCHENKO RESUME</span>
-                </div>
-            </a>
+            </div>
+        </a>
+        <div class="navigationMenu">
+            <ul class="navigationMenu__ul">
+                <li class="navigationMenu__ul_item"><a href="working-experience.html">Experience</a></li>
+                <li class="navigationMenu__ul_item"><a href="projects.html">Projects</a></li>
+                <li class="navigationMenu__ul_item"><a href="get-in-touch.html">Get in touch</a></li>
+                <li class="navigationMenu__ul_item"><a href="hobbies.html">Hobbies</a></li>
+            </ul>
+        </div>
         <div class="hamburger">
             <span class="hamburger__line"></span>
             <span class="hamburger__line"></span>
             <span class="hamburger__line"></span>
             <ul class="hamburger__navigation">
-                <a href="index.html"><li class="hamburger__navigation_item">Home</li></a>
-                <a href="projects.html"><li class="hamburger__navigation_item">Projects</li></a>
-                <a href="get-in-touch.html"><li class="hamburger__navigation_item">Get in touch</li></a>
-                <a href="hobbies.html"><li class="hamburger__navigation_item">Hobbies</li></a>
+                <li class="hamburger__navigation_item"><a href="working-experience.html">Experience</a></li>
+                <li class="hamburger__navigation_item"><a href="projects.html">Projects</a></li>
+                <li class="hamburger__navigation_item"><a href="get-in-touch.html">Get in touch</a></li>
+                <li class="hamburger__navigation_item"><a href="hobbies.html">Hobbies</a></li>
             </ul>
         </div>
-        </header>
-        <div class="sections-container">
+    </header>
+    <div class="sections-container">
         <section class="sections-container__section-first">
             <h1 class="sections-container__section-first_heading">RELATIVE WORKING EXPERIENCE</h1>
             <span class="sections-container__section-first_text">I was lucky to be a part of the following companies<br>
             </span>
             <div class="rel-work-experience">
-                <div class="rel-work-experience__companies">Artezio
+                <div class="rel-work-experience__companies">
+                    <span class="rel-work-experience__companies-name">Artezio</span>
                     <a href="http://artezio.ru/" target="_blank">
                         <img class="rel-work-experience__companies_img" src="src/img/logos/artezio_logo_logo.jpg"></img>
                     </a>
                 </div>
-                <div class="rel-work-experience__companies">UXpresso
-                <a href="http://uxpresso.by/" target="_blank" name="UXpresso">
-                    <img class="rel-work-experience__companies_img" src="src/img/logos/uxpresso_logo.svg"></img>
-                </a>
+                <div class="rel-work-experience__companies">
+                    <span class="rel-work-experience__companies-name">UXpresso</span>
+                    <a href="http://uxpresso.by/" target="_blank" name="UXpresso">
+                        <img class="rel-work-experience__companies_img" src="src/img/logos/uxpresso_logo.svg"></img>
+                    </a>
                 </div>
-                <div class="rel-work-experience__companies">Playtica
+                <div class="rel-work-experience__companies">
+                    <span class="rel-work-experience__companies-name">Playtica</span>
                     <a href="https://playtika.com/" target="_blank" name="Playtica">
-                        <svg class="rel-work-experience__companies_img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="372px" height="373.667px" viewBox="0 0 372 373.667" enable-background="new 0 0 372 373.667" xml:space="preserve">
+                        <svg class="rel-work-experience__companies_img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="372px" height="373.667px" viewBox="0 0 372 373.667" enable-background="new 0 0 372 373.667"
+                            xml:space="preserve">
                             <path fill="#D21123" d="M360.753,187c0,95.634-77.858,173.16-173.899,173.16c-96.042,0-173.9-77.526-173.9-173.16  c0-95.633,77.858-173.16,173.9-173.16C282.895,13.84,360.753,91.367,360.753,187"/>
                             <path fill="#FFFFFF" d="M171.846,354.311c-0.909-12.653-27.596-45.664-26.779-71.371c0.107-3.353,6.448-53.19,16.449-75.711  c4.036-9.086,33.854-48.236,77.941-22.421c29.967,17.548,38.647-20.943,44.975-36.763c1.526-3.817,2.44-7.733,3.414-11.289  c2.454-9.78,1.911-15.872-5.613-27.697c-2.226-3.5-26.111-46.697-27.759-48.895c-14.771-19.694-46.412-41.194-92.379-41.194  c-10.376,0-24.839,4.104-36.926,5.981c7.94,2.261,16.089,7.159,16.089,7.159c7.618,2.505,4.388,3.163-3.44,0.949  c-31.54-8.917-71.247-18.712-85.455,4.804C41.347,56.094,74.084,82.228,74.084,82.228c-4.729-2.379-11.226-10.203-16.725-16.445  C28.469,96.734,10.554,141.238,10.554,187c0,86.505,63.287,161.568,146.166,174.498  C164.512,365.384,172.058,357.512,171.846,354.311"/>
                             <path fill="#CDCDCD" d="M268.522,179.384c1.283-1.767,5.059-7.318,6.532-9.808c2.119-3.576,4.032-10.549,5.756-14.724  c-5.868,4.341-20.221,9.127-25.554,10.036C278.596,161.449,270.733,175.944,268.522,179.384"/>
@@ -72,7 +87,7 @@
             </div>
         </section>
         <section class="sections-container__section-second">
-            <div class="section_2-left-block">
+            <div class="section_column section_column--dark">
                 <ul><span>Responsibilities:</span><br>
                     <li>Manual testing (smoke, functional, regression, cross-browser)</li>
                     <li>Writing test cases and creating test designs in English</li>
@@ -81,7 +96,7 @@
                     <li>Web applications testing</li>
                 </ul>
             </div>
-            <div class="section_2-right-block">
+            <div class="section_column section_column--light">
                 <ul><span>Tools:</span><br>
                     <li>IDE: Webstorm, Cloud9</li>
                     <li>Bug Trackers: Jira, Assembla, Asana</li>
@@ -89,27 +104,28 @@
                 </ul>
             </div>
         </section>
+    </div>
+    <footer class="footer">
+        <span class="footer__text">Created with Love by Denis Anis&copy;henko</span>
+        <div class="footer__logos">
+            <a class="footer__logos_a" href="https://www.linkedin.com/in/denis-anischenko-813540137/" name="LinkedIn" target="_blank">
+                <img class="footer__logos_img" src="src/img/logos/linkedin_logo.png">
+            </a>
+            <a class="footer__logos_a" href="https://hh.ru/resume/b3e2ff87ff0342f0240039ed1f486d65353668" name="HH.ru" target="_blank">
+                <img class="footer__logos_img" src="src/img/logos/hh_logo.svg">
+            </a>
+            <a class="footer__logos_a" download href="src/resume_download/resume.pdf" name="DownloadPDF">
+                <img class="footer__logos_img" src="src/img/logos/pdf_logo.png">
+            </a>
+            <a class="footer__logos_a" download href="src/resume_download/resume.doc" name="DownloadDOC">
+                <img class="footer__logos_img" src="src/img/logos/doc_logo.png">
+            </a>
+            <a class="footer__logos_a" download href="src/resume_download/resume.rtf" name="DownloadRTF">
+                <img class="footer__logos_img" src="src/img/logos/rtf_logo.svg">
+            </a>
         </div>
-        <footer class="footer">
-            <span class="footer__text">Created with Love by Denis Anis&copy;henko</span>
-            <div class="footer__logos">
-                <a class="footer__logos_a" href="https://www.linkedin.com/in/denis-anischenko-813540137/" name="LinkedIn" target="_blank">
-                    <img class="footer__logos_img" src="src/img/logos/linkedin_logo.png">
-                </a>
-                <a class="footer__logos_a" href="https://hh.ru/resume/b3e2ff87ff0342f0240039ed1f486d65353668" name="HH.ru" target="_blank">
-                    <img class="footer__logos_img" src="src/img/logos/hh_logo.svg">
-                </a>
-                <a class="footer__logos_a" download href="src/resume_download/resume.pdf" name="DownloadPDF">
-                    <img class="footer__logos_img" src="src/img/logos/pdf_logo.png">
-                </a>
-                <a class="footer__logos_a" download href="src/resume_download/resume.doc" name="DownloadDOC">
-                    <img class="footer__logos_img" src="src/img/logos/doc_logo.png">
-                </a>
-                <a class="footer__logos_a" download href="src/resume_download/resume.rtf" name="DownloadRTF">
-                    <img class="footer__logos_img" src="src/img/logos/rtf_logo.svg">
-                </a>
-            </div>
-        </footer>
-        <script src="src/js/main.js"></script>
-    </body>
+    </footer>
+    <script src="src/js/main.js"></script>
+</body>
+
 </html>

@@ -32,6 +32,7 @@ a {
     align-items: center;
     height: 140px;
     width: 100%;
+    z-index: 10;
     background-color: #f8f6f6;
     padding: 0 6%;
     box-sizing: border-box;
@@ -275,6 +276,12 @@ a {
     background-color: #ffffff;
 }
 
+@media screen and (max-width : 768px) {
+    .sections-container__section-first_heading {
+        font-size: 1.6em;
+    }
+}
+
 .text-block__heading {
     font-size: 48pt;
     color: #f6f6f6;
@@ -298,24 +305,31 @@ a {
 .rel-work-experience {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .rel-work-experience__companies {
-    width: 325px;
-    height: 200px;
+    max-width: 325px;
     background-color: #ebebeb;
     margin: 10px;
     text-align: center;
     outline: 1px solid black;
 }
 
+.rel-work-experience__companies-name {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
 .rel-work-experience__companies_img {
-    width: 325px;
-    height: 181px;
+    width: calc(100% - 30px);
+    height: 151px;
+    margin: 15px;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
     transition: all 1s;
-    border-top: 1px solid black;
 }
 
 .rel-work-experience__companies_img:hover {
@@ -327,32 +341,50 @@ a {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 435px;
 }
 
-.section_2-left-block {
+@media screen and (max-width : 1024px) {
+    .sections-container__section-second {
+        flex-direction: column;
+    }
+}
+
+.section_column {
     width: 50%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width : 1024px) {
+    .section_column {
+        width: 100%;
+    }
+}
+
+.section_column--dark {
     background-color: #171f23;
 }
 
+.section_column--light {
+    background-color: #575c5f;
+}
 
-.section_2-left-block ul,
-.section_2-right-block ul {
+
+.section_column ul {
     font-size: 14pt;
     color: #c1c1c1;
-    margin-top: 25%;
+    margin: 0;
+    padding: 0;
     text-align: center;
     list-style-type: none;
 }
 
-.section_2-left-block span,
-.section_2-right-block span {
+.section_column span {
     font-size: 23pt;
-}
-
-.section_2-right-block {
-    width: 50%;
-    background-color: #575c5f;
 }
 
 
@@ -398,24 +430,31 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    padding: 0 15px;
 }
 
-.messageForm__nameAndMailContainer {
+.messageForm__row {
     width: 100%;
+    padding: 15px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.messageForm__nameMailContainer_nameInput,
-.messageForm__nameMailContainer_mailInput {
-    border: none;
-    border-bottom: 1px solid #cacaca;
-    width: 100%;
+.messageForm__row:first-child {
+    padding: 0;
 }
 
-.messageForm__textAreaComtainer {
+@media screen and (max-width : 768px) {
+    .messageForm__row {
+        flex-direction: column;
+    }
+}
+
+.messageForm__nameMailContainer_input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cacaca;
     width: 100%;
 }
 
@@ -423,12 +462,21 @@ a {
     border: none;
     border-bottom: 1px solid #cacaca;
     width: 100%;
-    outline: beige;
+    box-sizing: border-box;
+    outline: none;
+    display: block;
 }
 
 .messageForm__nameAndMailContainer_column {
     width: 48%;
     display: flex;
+    padding: 15px 0;
+}
+
+@media screen and (max-width : 768px) {
+    .messageForm__nameAndMailContainer_column {
+        width: 100%;
+    }
 }
 
 .messageForm__nameMailContainer_label {
@@ -443,10 +491,6 @@ a {
     color: #f6744b;
 }
 
-.messageForm__textAreaComtainer {
-    padding-top:60px;
-}
-
 #sendMessageButton {
    width: 205px;
    height: 55px;
@@ -456,6 +500,12 @@ a {
    margin: 60px 0;
    border: none;
    outline: beige;
+}
+
+@media screen and (max-width : 768px) {
+    #sendMessageButton {
+        margin: 20px 0;
+    }
 }
 
 #sendMessageButton:hover {
@@ -504,8 +554,11 @@ a {
 }
 
 .content-block__column_hobby-name-block {
+
    height: 25%;
    background-color: #0e1316;
+   font-size: 20pt;
+   color: #ffffff;
 }
 
 .content-block__column_hobby-description-block {
