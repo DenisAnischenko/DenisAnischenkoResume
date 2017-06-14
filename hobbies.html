@@ -1,64 +1,127 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Home Page</title>
-        <meta charsert="UTF-8"></meta>
-        <link rel="stylesheet" href="src/normalize.css" type="text/css">
-        <link rel="stylesheet" href="src/main.css" type="text/css">
-    </head>
-    <body>
-        <header class="header">
-            <a class="header__a" href="index.html">
-                <div class="header-logo">
-                <span class="header-logo__text">DENIS ANISCHENKO RESUME</span>
-                </div>
-            </a>
+
+<head>
+    <title>Hobbies</title>
+    <meta charsert="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/normalize.css" type="text/css">
+    <link rel="stylesheet" href="src/main.css" type="text/css">
+</head>
+
+<body>
+
+    <header class="header header-hobbies">
+        <div class="header-logo">
+            <span class="header-logo__text"><a href="index.html">DENIS ANISCHENKO RESUME</a></span>
+        </div>
+        <div class="navigationMenu">
+            <ul class="navigationMenu__ul">
+                <li class="navigationMenu__ul_item"><a href="working-experience.html">Experience</a></li>
+                <li class="navigationMenu__ul_item"><a href="projects.html">Projects</a></li>
+                <li class="navigationMenu__ul_item"><a href="hobbies.html">Hobbies</a></li>
+                <li class="navigationMenu__ul_item"><a href="get-in-touch.html">Get in touch</a></li>
+            </ul>
+        </div>
         <div class="hamburger">
             <span class="hamburger__line"></span>
             <span class="hamburger__line"></span>
             <span class="hamburger__line"></span>
             <ul class="hamburger__navigation">
-                <a href="working-experience.html"><li class="hamburger__navigation_item">Experience</li></a>
-                <a href="projects.html"><li class="hamburger__navigation_item">Projects</li></a>
-                <a href="get-in-touch.html"><li class="hamburger__navigation_item">Get in touch</li></a>
-                <a href="hobbies.html"><li class="hamburger__navigation_item">Hobbies</li></a>
+                <li class="hamburger__navigation_item"><a href="working-experience.html">Experience</a></li>
+                <li class="hamburger__navigation_item"><a href="projects.html">Projects</a></li>
+                <li class="hamburger__navigation_item"><a href="get-in-touch.html">Get in touch</a></li>
+                <li class="hamburger__navigation_item"><a href="hobbies.html">Hobbies</a></li>
             </ul>
         </div>
-        </header>
-        <section class="sections-container__section-first">
-            <h1 class="sections-container__section-first_heading">Hobbies</h1>
-            <span class="sections-container__section-first_text">My Hobbies<br></span>
-        </section>
-        <section class="hobbies-block">
-            <div class="hobbies-block-left-container">
-                <img class="hobbies-block-left-container__img" src=""></img>
-                <span>NAME<br>Profession</span>
+    </header>
+    <div class="hobbies-block-container">
+        <div class="text-block">
+            <h1 class="text-block__heading">Hobbies</h1>
+        </div>
+        <div class="content-block">
+            <div class="content-block__column">
+                <div class="content-block__column_hobby-name-block"></div>
+                <div class="content-block__column_hobby-description-block"></div>
+                <div class="content-block__column_hobby-button-block">
+                    <button id="getToWebpageButton"><a href="#" target="_blank">Webpage</a></button>
+                </div>
             </div>
-            <div class="hobbies-block__right-side"></div>
-        </section>
-        <section>
-            
-        </section>
-        <footer class="footer">
-            <span class="footer__text">Created with Love by Denis Anis&copy;henko</span>
-            <div class="footer__logos">
-                <a class="footer__logos_a" href="https://www.linkedin.com/in/denis-anischenko-813540137/" name="LinkedIn" target="_blank">
-                    <img class="footer__logos_img" src="src/img/logos/linkedin_logo.png">
-                </a>
-                <a class="footer__logos_a" href="https://hh.ru/resume/b3e2ff87ff0342f0240039ed1f486d65353668" name="HH.ru" target="_blank">
-                    <img class="footer__logos_img" src="src/img/logos/hh_logo.svg">
-                </a>
-                <a class="footer__logos_a" download href="src/resume_download/resume.pdf" name="DownloadPDF">
-                    <img class="footer__logos_img" src="src/img/logos/pdf_logo.png">
-                </a>
-                <a class="footer__logos_a" download href="src/resume_download/resume.doc" name="DownloadDOC">
-                    <img class="footer__logos_img" src="src/img/logos/doc_logo.png">
-                </a>
-                <a class="footer__logos_a" download href="src/resume_download/resume.rtf" name="DownloadRTF">
-                    <img class="footer__logos_img" src="src/img/logos/rtf_logo.svg">
-                </a>
+            <div class="content-block__column">
+                <div class="content-block__column_hobby-name-block"></div>
+                <div class="content-block__column_hobby-description-block"></div>
+                <div class="content-block__column_hobby-button-block">
+                    <button id="getToWebpageButton"><a href="#" target="_blank">Webpage</a></button>
+                </div>
             </div>
-        </footer>
-        <script src="src/js/main.js"></script>
-    </body>
+            <div class="content-block__column">
+                <div class="content-block__column_hobby-name-block"></div>
+                <div class="content-block__column_hobby-description-block"></div>
+                <div class="content-block__column_hobby-button-block">
+                    <button id="getToWebpageButton"><a href="#" target="_blank">Webpage</a></button>
+                </div>
+            </div>
+            <div class="content-block__column">
+                <div class="content-block__column_hobby-name-block"></div>
+                <div class="content-block__column_hobby-description-block"></div>
+                <div class="content-block__column_hobby-button-block">
+                    <button id="getToWebpageButton"><a href="#" target="_blank">Webpage</a></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--<section class="hobbies-block">-->
+    <!--    <div class="hobbies-block-left-container">-->
+    <!--        <img class="hobbies-block-left-container__img" src=""></img>-->
+    <!--        <span>NAME<br>Profession</span>-->
+    <!--    </div>-->
+    <!--    <div class="hobbies-block-right-container">-->
+    <!--        <div class="right-container-content-container">-->
+    <!--            <div class="hobbies-block-right-container__text">-->
+    <!--                <h2 class="hobbies-block-right-container__heading"> My Hobbies list<br></h2>-->
+    <!--                <span class="hobbies-block-right-container__text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elitt  Lorem ipsum dolor sit amet</span>-->
+    <!--            </div>-->
+    <!--            <div class="linecontainer">-->
+    <!--                <span class="linecontainer__hobbyname">Guitar</span>-->
+    <!--                <div class="linecontainer__line"></div>-->
+    <!--                <span class="linecontainer__hobbyname">Drums</span>-->
+    <!--                <div class="linecontainer__line"></div>-->
+    <!--                <span class="linecontainer__hobbyname">JS</span>-->
+    <!--                <div class="linecontainer__line"></div>-->
+    <!--                <span class="linecontainer__hobbyname">Muai Thai</span>-->
+    <!--                <div class="linecontainer__line"></div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+
+    <!--    </div>-->
+    <!--</section>-->
+    <!--<section>-->
+
+    <!--</section>-->
+    <footer class="footer footer-hobbies">
+        <span class="footer__text">Created with Love by Denis Anis&copy;henko</span>
+        <div class="footer__logos footer__logos-hobbies">
+            <a class="footer__logos_a" href="https://www.linkedin.com/in/denis-anischenko-813540137/" name="LinkedIn" target="_blank">
+                <img class="footer__logos_img" src="src/img/logos/linkedin_logo.png">
+            </a>
+            <a class="footer__logos_a" href="https://hh.ru/resume/b3e2ff87ff0342f0240039ed1f486d65353668" name="HH.ru" target="_blank">
+                <img class="footer__logos_img" src="src/img/logos/hh_logo.svg">
+            </a>
+            <a class="footer__logos_a" download href="src/resume_download/resume.pdf" name="DownloadPDF">
+                <img class="footer__logos_img" src="src/img/logos/pdf_logo.png">
+            </a>
+            <a class="footer__logos_a" download href="src/resume_download/resume.doc" name="DownloadDOC">
+                <img class="footer__logos_img" src="src/img/logos/doc_logo.png">
+            </a>
+            <a class="footer__logos_a" download href="src/resume_download/resume.rtf" name="DownloadRTF">
+                <img class="footer__logos_img" src="src/img/logos/rtf_logo.svg">
+            </a>
+        </div>
+    </footer>
+    <script src="src/js/main.js"></script>
+</body>
+
 </html>

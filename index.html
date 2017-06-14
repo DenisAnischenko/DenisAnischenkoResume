@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Home Page</title>
-        <meta charsert="UTF-8"></meta>
-        <link rel="stylesheet" href="src/normalize.css" type="text/css">
-        <link rel="stylesheet" href="src/main.css" type="text/css">
-    </head>
-    <body>
-        <header class="header">
-            <a class="header__a" href="index.html">
-                <div class="header-logo">
-                <span class="header-logo__text">DENIS ANISCHENKO RESUME</span>
-                </div>
-            </a>
+
+<head>
+    <title>Home Page</title>
+    <meta charsert="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/normalize.css" type="text/css">
+    <link rel="stylesheet" href="src/main.css" type="text/css">
+</head>
+
+<body>
+    
+    <header class="header">
+        <div class="header-logo">
+            <span class="header-logo__text"><a href="index.html">DENIS ANISCHENKO RESUME</a></span>
+        </div>
+        <div class="navigationMenu">
+            <ul class="navigationMenu__ul">
+                <li class="navigationMenu__ul_item"><a href="working-experience.html">Experience</a></li>
+                <li class="navigationMenu__ul_item"><a href="projects.html">Projects</a></li>
+                <li class="navigationMenu__ul_item"><a href="hobbies.html">Hobbies</a></li>
+                <li class="navigationMenu__ul_item"><a href="get-in-touch.html">Get in touch</a></li>
+            </ul>
+        </div>
         <div class="hamburger">
             <span class="hamburger__line"></span>
             <span class="hamburger__line"></span>
             <span class="hamburger__line"></span>
             <ul class="hamburger__navigation">
-                <a href="working-experience.html"><li class="hamburger__navigation_item">Experience</li></a>
-                <a href="projects.html"><li class="hamburger__navigation_item">Projects</li></a>
-                <a href="get-in-touch.html"><li class="hamburger__navigation_item">Get in touch</li></a>
-                <a href="hobbies.html"><li class="hamburger__navigation_item">Hobbies</li></a>
+                <li class="hamburger__navigation_item"><a href="working-experience.html">Experience</a></li>
+                <li class="hamburger__navigation_item"><a href="projects.html">Projects</a></li>
+                <li class="hamburger__navigation_item"><a href="get-in-touch.html">Get in touch</a></li>
+                <li class="hamburger__navigation_item"><a href="hobbies.html">Hobbies</a></li>
             </ul>
         </div>
-        </header>
-        <section class="main-page">
-            <h1 class="main-page__heading">Summary<br></h1>
-            <span class="main-page__text">
+    </header>
+    <section class="main-page">
+        <h1 class="main-page__heading">Summary<br></h1>
+        <span class="main-page__text">
                 <ul class="main-page__text_ul">
                     <li>3+ years of Manual web/iOS/Android testing experience</li>
                     <li>Profound English skills</li>
@@ -38,27 +48,28 @@
                     <li>Keen on playing Drums, Guitar playing and Muay Thai</li>
                 </ul>
             </span>
-        </section>
-        <footer class="footer">
-            <span class="footer__text">Created with Love by Denis Anis&copy;henko</span>
-            <div class="footer__logos">
-                <a class="footer__logos_a" href="https://www.linkedin.com/in/denis-anischenko-813540137/" name="LinkedIn" target="_blank">
-                    <img class="footer__logos_img" src="src/img/logos/linkedin_logo.png">
-                </a>
-                <a class="footer__logos_a" href="https://hh.ru/resume/b3e2ff87ff0342f0240039ed1f486d65353668" name="HH.ru" target="_blank">
-                    <img class="footer__logos_img" src="src/img/logos/hh_logo.svg">
-                </a>
-                <a class="footer__logos_a" download href="src/resume_download/resume.pdf" name="DownloadPDF">
-                    <img class="footer__logos_img" src="src/img/logos/pdf_logo.png">
-                </a>
-                <a class="footer__logos_a" download href="src/resume_download/resume.doc" name="DownloadDOC">
-                    <img class="footer__logos_img" src="src/img/logos/doc_logo.png">
-                </a>
-                <a class="footer__logos_a" download href="src/resume_download/resume.rtf" name="DownloadRTF">
-                    <img class="footer__logos_img" src="src/img/logos/rtf_logo.svg">
-                </a>
-            </div>
-        </footer>
-        <script src="src/js/main.js"></script>
-    </body>
+    </section>
+    <footer class="footer">
+        <span class="footer__text">Created with Love by Denis Anis&copy;henko</span>
+        <div class="footer__logos">
+            <a class="footer__logos_a" href="https://www.linkedin.com/in/denis-anischenko-813540137/" name="LinkedIn" target="_blank">
+                <img class="footer__logos_img" src="src/img/logos/linkedin_logo.png">
+            </a>
+            <a class="footer__logos_a" href="https://hh.ru/resume/b3e2ff87ff0342f0240039ed1f486d65353668" name="HH.ru" target="_blank">
+                <img class="footer__logos_img" src="src/img/logos/hh_logo.svg">
+            </a>
+            <a class="footer__logos_a" download href="src/resume_download/resume.pdf" name="DownloadPDF">
+                <img class="footer__logos_img" src="src/img/logos/pdf_logo.png">
+            </a>
+            <a class="footer__logos_a" download href="src/resume_download/resume.doc" name="DownloadDOC">
+                <img class="footer__logos_img" src="src/img/logos/doc_logo.png">
+            </a>
+            <a class="footer__logos_a" download href="src/resume_download/resume.rtf" name="DownloadRTF">
+                <img class="footer__logos_img" src="src/img/logos/rtf_logo.svg">
+            </a>
+        </div>
+    </footer>
+    <script src="src/js/main.js"></script>
+</body>
+
 </html>

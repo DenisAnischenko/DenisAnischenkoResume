@@ -41,14 +41,67 @@ a {
     background-color: #171f23;
 }
 
-.header-logo__text {
+.header-logo {
+    width: 310px;
+}
+
+.header-logo__text a {
     font-size: 40px;
     color: #464646;
     transition: all 0.5s;
 }
 
-.header-logo__text:hover {
+.header-logo__text a:hover {
     color: #f36134;
+}
+
+@media screen and (min-width : 1025px) {
+    .hamburger {
+        display:none;
+    }
+}
+
+
+@media screen and (max-width : 1024px) {
+    .navigationMenu {
+        display:none;
+    }
+}
+
+
+
+.navigationMenu {
+    flex: 1;   
+}
+
+.navigationMenu__ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navigationMenu__ul {
+    list-style-type: none;
+}
+
+.navigationMenu__ul_item {
+    min-width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    letter-spacing: 4px;
+}
+
+.navigationMenu__ul_item a {
+    color: #353535;
+    transition: all 0.5s;
+}
+
+.navigationMenu__ul_item a:hover {
+    color: #f36134;
+    border-bottom: 1px solid #f6744b;
 }
 
                     /*Hamburger*/
@@ -74,13 +127,11 @@ a {
                     
 @keyframes smallbig {
   0%{
-    transform: scale(1);
-  }
-
-  50%{
     transform: scale(0);
   }
-  
+  /*50%{*/
+  /*  transform: scale(0);*/
+  /*}*/
   100%{
     transform: scale(1);
   }
@@ -123,6 +174,7 @@ a {
 }
 
                     /*Hamburger list-item animation*/
+                    
 .hamburger__navigation {
     top: 10px;
     padding: 0;
@@ -134,12 +186,16 @@ a {
     border-top: 2px solid #303030; 
     min-width: 160px;
     text-align: center;
-    color: #d6d5d5;
     padding: 0 50px;
+  
+}
+
+.hamburger__navigation_item a {
+    color: #d6d5d5;
     transition: all 0.5s;
 }
 
-.hamburger__navigation_item:hover {
+.hamburger__navigation_item a:hover {
     color: #f36134;
 }
 
@@ -155,7 +211,8 @@ a {
     font-size: 20px;
 }
 
-.footer-get-in-touch {
+.footer-get-in-touch,
+.footer-hobbies {
     background-color: #171f23;
 }
 
@@ -172,6 +229,7 @@ a {
 
 
                     /*HOME PAGE*/
+                    
                     
 .main-page {
     background-color: #353535;
@@ -195,10 +253,6 @@ a {
     line-height: 48px;
 }
 
-/*.main-page__text_ul {*/
-/*    list-style-type: none;*/
-/*}*/
-
 
                     /*ABOUT US*/
                     
@@ -221,9 +275,9 @@ a {
     background-color: #ffffff;
 }
 
-.sections-container__section-first_heading {
+.text-block__heading {
     font-size: 48pt;
-    color: #3d3d3d;
+    color: #f6f6f6;
     margin: 0;
 }
 
@@ -232,6 +286,11 @@ a {
     color: #c1c1c1;
     margin: 20px 0;
     text-align: center;
+}
+                    /*PROJECTS*/
+                    
+.proectsContentContainer {
+    height: 500px;
 }
 
                     /*WORKING EXPERIENCE*/
@@ -354,7 +413,6 @@ a {
     border: none;
     border-bottom: 1px solid #cacaca;
     width: 100%;
-    
 }
 
 .messageForm__textAreaComtainer {
@@ -365,6 +423,7 @@ a {
     border: none;
     border-bottom: 1px solid #cacaca;
     width: 100%;
+    outline: beige;
 }
 
 .messageForm__nameAndMailContainer_column {
@@ -396,6 +455,7 @@ a {
    font-size: 14pt;
    margin: 60px 0;
    border: none;
+   outline: beige;
 }
 
 #sendMessageButton:hover {
@@ -413,41 +473,126 @@ a {
 
                     /*HOBBIES*/
                     
-.hobbies-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 105px;
-    
-}
-
-.hobbies-block-left-container {
+.hobbies-block-container {
+    flex: 1 0 auto;
+    padding-top: 200px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: #171f23;
+}
+
+.text-block__heading {
+    padding-bottom: 55px;
+}
+
+.content-block {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 600px;
+    margin-bottom: 105px;
+}
+
+.content-block__column {
+    height: 100%;
+    width: 25%;
+}
+
+.content-block__column:hover {
+    outline: 1px solid #f6744b;
+}
+
+.content-block__column_hobby-name-block {
+   height: 25%;
+   background-color: #0e1316;
+}
+
+.content-block__column_hobby-description-block {
+    height: 50%;
+    background-color: #414547;
+}
+
+.content-block__column_hobby-button-block {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 25%;
-    height: 500px;
-    background-color: #d6d5d5;
-    margin-right: 25px;
+    height: 25%;
+    background-color: #414547;
 }
 
-.hobbies-block-left-container__img {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
+#getToWebpageButton {
+   width: 125px;
+   height: 35px;
+   border-radius: 3px;
+   background-color: #f6744b;
+   font-size: 14pt;
+   border: none;
+   outline: beige;
 }
 
-.hobbies-block__right-side {
-    width: 50%;
-    height: 500px;
-    background-color: #d6d5d5
+#getToWebpageButton a {
+   color: #ffffff; 
 }
 
-.footer__logos-hobbies {
-    filter: invert();
-}
+/*.hobbies-block {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: center;*/
+/*    margin-bottom: 105px;*/
+    
+/*}*/
+
+/*.hobbies-block-left-container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    width: 25%;*/
+/*    height: 500px;*/
+/*    background-color: #d6d5d5;*/
+/*    margin-right: 25px;*/
+/*}*/
+
+/*.hobbies-block-left-container__img {*/
+/*    height: 150px;*/
+/*    width: 150px;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+/*.hobbies-block-right-container {*/
+/*    width: 50%;*/
+/*    height: 500px;*/
+/*    background-color: #d6d5d5;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.hobbies-block-right-container__heading {*/
+/*    margin-top: 0;*/
+/*    text-align: center;*/
+/*    font-size: 24pt;*/
+/*    color: #3d3d3d;*/
+/*}*/
+
+/*.hobbies-block-right-container__text {*/
+/*    color: #858383;*/
+/*    margin-bottom: 15px;*/
+/*}*/
+
+/*.linecontainer__line {*/
+/*    height: 1px;*/
+/*    width: 100%;*/
+/*    background-color: #e84c3d;*/
+/*}*/
+
+/*.linecontainer__hobbyname {*/
+/*    color:;*/
+/*    font-size: 14pt;*/
+/*}*/
 
 .footer-hobbies {
-    color: #dfdfe0;
+    background-color: #ffffff;
 }
