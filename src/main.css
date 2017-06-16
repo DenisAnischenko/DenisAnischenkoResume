@@ -306,8 +306,79 @@ a {
 
                     /*PROJECTS*/
                     
-.proectsContentContainer {
-    height: 500px;
+.projectsContentContainer{
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.projectsContentContainer__heading{
+    font-size: 48pt;
+    color: #464646;
+    margin: 5px;
+    flex: 1;
+}
+
+.projectsContentContainer__intro-text{
+    font-size: 14pt;
+    margin: 5px;
+}
+
+.projectsContent{
+    background-color: #e84c3d;
+    width: 100%;
+    color: #f6f6f6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.projectsContent__project {
+    box-sizing: border-box;
+    min-width: 150px;
+    width: 33%;
+    font-family: 'Helvetica', sans-serif;
+    padding: 20px 10px;
+}
+
+@media screen and (max-width : 1024px) {
+    .projectsContent__project {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width : 640px) {
+    .projectsContent__project {
+        width: 100%;
+    }
+    .projectPicture_Eye,
+    .projectPicture__Uxp {
+      height: 200px;
+    }
+}
+
+.projectPicture_Eye{
+  background-image: url('img/projects/eyefitu-preview.png');
+  background-size: cover;
+  padding: 0px;
+}
+
+.projectPicture__Uxp{
+  background-image: url('img/projects/uxpressia-preview.jpg');
+  background-size: cover;
+  padding: 0px;
+}
+
+.projectTitle{
+  font-size: 20pt;
+  font-family: "Big Noodle Titling", Arial, sans-serif;
+  color: #f6f6f6;
 }
 
                     /*EXPERIENCE*/
